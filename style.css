@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #1B1B1B;
+}
+
+span {
+    color: #E95E10;
+    font-weight: 700;
+}
+
+body {
+    background-color: #F5F4F0;
+}
+
+#main-container {
+    margin: 88px auto 65px;
+    width: 1120px;
+}
+
+
