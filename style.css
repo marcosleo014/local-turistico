@@ -10,11 +10,25 @@
 
 h1, h2, h3 {
     color: #1B1B1B;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
 }
 
 span {
     color: #E95E10;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 body {
