@@ -14,17 +14,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: clamp(24px, 4vw, 36px);
     margin: 8px 0 40px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: clamp(20px, 3.5vw, 32px);
     margin: 2px 0 8px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: clamp(18px, 3vw, 28px);
     margin: 40px 0 20px;
 }
 
@@ -36,7 +36,7 @@ figcaption {
 
 span {
     color: #E95E10;
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 16px);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -51,13 +51,16 @@ main img {
 }
 
 article img {
-    height: 400px;
-    object-fit: cover; /*faz com que o ajuste da altura não cause distorção na imagem*/
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 #main-container {
     margin: 88px auto 0;
-    width: 1120px;
+    max-width: 1120px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 #introduction p {
@@ -86,4 +89,39 @@ footer {
 
 footer img {
     vertical-align: middle; /*centraliza a imagem verticalmente em relação ao texto*/
+}
+
+@media (max-width: 768px) {
+    #main-container {
+        margin: 44px auto 0;
+        padding: 0 16px;
+    }
+
+    h1 {
+        margin: 8px 0 20px;
+    }
+
+    h3 {
+        margin: 20px 0 10px;
+    }
+
+    #introduction p {
+        margin-bottom: 22px;
+    }
+
+    #attractions {
+        padding: 32px 0 20px;
+    }
+
+    #about {
+        margin: 22px 0 32px;
+    }
+
+    figcaption {
+        margin: 10px auto 20px;
+    }
+
+    footer {
+        margin-bottom: 24px;
+    }
 }
