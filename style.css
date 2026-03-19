@@ -15,29 +15,75 @@ h1, h2, h3 {
 
 h1 {
     font-size: 36px;
+    margin: 8px 0 40px;
 }
 
 h2 {
     font-size: 32px;
+    margin: 2px 0 8px;
 }
 
 h3 {
     font-size: 28px;
+    margin: 40px 0 20px;
+}
+
+figcaption {
+    font-style: italic;
+    margin: 10px auto 40px;
+    text-align: center;
 }
 
 span {
     color: #E95E10;
     font-size: 16px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 body {
     background-color: #F5F4F0;
 }
 
+main img {
+    border-radius: 28px;
+    width: 100%;
+}
+
+article img {
+    height: 400px;
+    object-fit: cover; /*faz com que o ajuste da altura não cause distorção na imagem*/
+}
+
 #main-container {
-    margin: 88px auto 65px;
+    margin: 88px auto 0;
     width: 1120px;
 }
 
+#introduction p {
+    margin-bottom: 44px;
+}
 
+#attractions {
+    border-top: solid #d9d9d9 1px;
+    border-bottom: solid #d9d9d9 1px;
+    padding: 64px 0 40px;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+#about {
+    margin: 44px 0 65px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+footer img {
+    vertical-align: middle; /*centraliza a imagem verticalmente em relação ao texto*/
+}
